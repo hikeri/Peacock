@@ -203,9 +203,7 @@ export async function getEpicEntitlements(
 
     if (res) {
         for (const ent of res) {
-            if (ent.owned) {
-                actuallyOwned.add(ent.itemId)
-            }
+            actuallyOwned.add(ent.itemId)
         }
     }
 
